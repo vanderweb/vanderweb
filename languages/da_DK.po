@@ -1,0 +1,2134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Certa v3.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-06-24 11:52:20+0000\n"
+"Last-Translator: ulrik <uvm@f10.dk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:30
+#@ certa
+msgid "Sorry This Page Does Not Exist!"
+msgstr ""
+
+#: comments.php:6
+#: index.php:91
+#: narrow-page.php:96
+#@ certa
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:6
+#: index.php:91
+#: narrow-page.php:96
+#@ certa
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:6
+#: index.php:91
+#: narrow-page.php:96
+#@ certa
+msgid " Comments"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:15
+#@ certa
+msgid "A custom menu widget that uses the wp_bootstrap_navwalker"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:19
+#@ certa
+msgid "Boot Strap Menu"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:64
+#: lib/bootstrap-custom-menu-widget.php:73
+#: lib/subnav-menu-widget.php:79
+#: options.php:585
+#@ certa
+#@ options_check
+msgid "Menu"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:64
+#@ certa
+msgid "Menu Name"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:68
+#: lib/subnav-menu-widget.php:83
+#@ certa
+msgid "Title"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:79
+#@ certa
+msgid "Default All Pages"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:101
+#@ certa
+msgid "Menu Type"
+msgstr ""
+
+#: options.php:36
+#@ options_check
+msgid "1 Boks"
+msgstr ""
+
+#: options.php:37
+#@ options_check
+msgid "2 Bokse"
+msgstr ""
+
+#: options.php:38
+#@ options_check
+msgid "3 Bokse"
+msgstr ""
+
+#: options.php:39
+#@ options_check
+msgid "4 Bokse"
+msgstr ""
+
+#: options.php:50
+#: options.php:66
+#: options.php:76
+#@ options_check
+msgid "3"
+msgstr ""
+
+#: options.php:51
+#: options.php:67
+#: options.php:77
+#@ options_check
+msgid "2"
+msgstr ""
+
+#: options.php:52
+#: options.php:68
+#: options.php:78
+#@ options_check
+msgid "1"
+msgstr ""
+
+#: options.php:64
+#: options.php:74
+#@ options_check
+msgid "5"
+msgstr ""
+
+#: options.php:65
+#: options.php:75
+#@ options_check
+msgid "4"
+msgstr ""
+
+#: options.php:97
+#@ options_check
+msgid "Mørk"
+msgstr ""
+
+#: options.php:98
+#@ options_check
+msgid "Lys"
+msgstr ""
+
+#: options.php:235
+#@ options_check
+msgid "Basis"
+msgstr ""
+
+#: options.php:239
+#@ options_check
+msgid "Baggrund"
+msgstr ""
+
+#: options.php:240
+#@ options_check
+msgid "Standard er #f6f6f6."
+msgstr ""
+
+#: options.php:250
+#@ options_check
+msgid "Standard Typografi:"
+msgstr ""
+
+#: options.php:283
+#@ options_check
+msgid "Link Hover Font Farve:"
+msgstr ""
+
+#: options.php:284
+#@ options_check
+msgid "Standard er #666666."
+msgstr ""
+
+#: options.php:303
+#@ options_check
+msgid "h1 Typografi:"
+msgstr ""
+
+#: options.php:311
+#@ options_check
+msgid "h2 Typografi:"
+msgstr ""
+
+#: options.php:319
+#@ options_check
+msgid "h3 Typografi:"
+msgstr ""
+
+#: options.php:247
+#: options.php:300
+#: options.php:345
+#: options.php:356
+#: options.php:368
+#: options.php:420
+#: options.php:433
+#: options.php:500
+#: options.php:564
+#: options.php:689
+#: options.php:777
+#: options.php:891
+#: options.php:981
+#: options.php:1100
+#: options.php:1186
+#: options.php:1272
+#: options.php:1358
+#: options.php:1444
+#: options.php:1530
+#: options.php:1600
+#: options.php:1692
+#: options.php:1761
+#: options.php:1830
+#: options.php:1922
+#: options.php:1936
+#: options.php:2041
+#: options.php:2060
+#@ options_check
+msgid "<hr/>"
+msgstr ""
+
+#: options.php:349
+#@ options_check
+msgid "Tilføj favicon"
+msgstr ""
+
+#: options.php:350
+#@ options_check
+msgid "Tilføj en favicon.ico billede."
+msgstr ""
+
+#: options.php:360
+#@ options_check
+msgid "Google Analytics Kode"
+msgstr ""
+
+#: options.php:361
+#@ options_check
+msgid "Eksempel: UA-00000000-0"
+msgstr ""
+
+#: options.php:372
+#@ options_check
+msgid "Indrammet side"
+msgstr ""
+
+#: options.php:373
+#@ options_check
+msgid "Hvis aktiveret vil siden blive indrammet."
+msgstr ""
+
+#: options.php:379
+#@ options_check
+msgid "Indrammet side Baggrundsfarve:"
+msgstr ""
+
+#: options.php:380
+#: options.php:484
+#: options.php:623
+#: options.php:631
+#: options.php:665
+#: options.php:673
+#: options.php:745
+#: options.php:769
+#: options.php:818
+#: options.php:825
+#: options.php:846
+#: options.php:1292
+#: options.php:1983
+#: options.php:2053
+#@ options_check
+msgid "Standard er #f1f1f1."
+msgstr ""
+
+#: options.php:472
+#@ options_check
+msgid "Header"
+msgstr ""
+
+#: options.php:476
+#@ options_check
+msgid "Vis Header Sektion"
+msgstr ""
+
+#: options.php:477
+#@ options_check
+msgid "Header vil som standard blive vist på siden."
+msgstr ""
+
+#: options.php:483
+#@ options_check
+msgid "Header Baggrundsfarve:"
+msgstr ""
+
+#: options.php:491
+#@ options_check
+msgid "Header Font Farve:"
+msgstr ""
+
+#: options.php:492
+#: options.php:1009
+#: options.php:1128
+#: options.php:1214
+#: options.php:1300
+#: options.php:1386
+#: options.php:1472
+#: options.php:1577
+#: options.php:1619
+#: options.php:1712
+#: options.php:1781
+#: options.php:1849
+#@ options_check
+msgid "Nedarvet fra Body Font Farve"
+msgstr ""
+
+#: options.php:547
+#@ options_check
+msgid "Venstre Header Boks Topluft"
+msgstr ""
+
+#: options.php:548
+#: options.php:556
+#: options.php:578
+#@ options_check
+msgid "Standard er 0."
+msgstr ""
+
+#: options.php:555
+#@ options_check
+msgid "Venstre Header Boks Bundluft"
+msgstr ""
+
+#: options.php:569
+#@ options_check
+msgid "Højre Header Boks Topluft"
+msgstr ""
+
+#: options.php:570
+#@ options_check
+msgid "Standard er 45."
+msgstr ""
+
+#: options.php:577
+#@ options_check
+msgid "Højre Header Boks Bundluft"
+msgstr ""
+
+#: options.php:614
+#@ options_check
+msgid "Hovedmenu Baggrundsfarve:"
+msgstr ""
+
+#: options.php:615
+#: options.php:639
+#: options.php:657
+#: options.php:681
+#: options.php:796
+#: options.php:1967
+#@ options_check
+msgid "Standard er #2d3638."
+msgstr ""
+
+#: options.php:638
+#@ options_check
+msgid "Hovedmenu Aktiv Baggrund Farve:"
+msgstr ""
+
+#: options.php:832
+#@ options_check
+msgid "Standard er #222222."
+msgstr ""
+
+#: options.php:782
+#@ options_check
+msgid "Standard sat til ikke aktiveret, Top Menu vil kun blive vist i Phone tilstand."
+msgstr ""
+
+#: options.php:789
+#@ options_check
+msgid "Standard sat til ikke aktiveret, Top Menu skal være sat til synlig for at fungere."
+msgstr ""
+
+#: options.php:396
+#: options.php:803
+#: options.php:839
+#@ options_check
+msgid "Standard er #555555."
+msgstr ""
+
+#: options.php:937
+#@ options_check
+msgid "Sektion"
+msgstr ""
+
+#: options.php:1111
+#@ options_check
+msgid "Sektion Top Baggrund"
+msgstr ""
+
+#: options.php:957
+#: options.php:993
+#: options.php:1112
+#: options.php:1120
+#: options.php:1198
+#: options.php:1206
+#: options.php:1284
+#: options.php:1370
+#: options.php:1378
+#: options.php:1456
+#: options.php:1464
+#: options.php:1547
+#: options.php:1570
+#: options.php:1605
+#: options.php:1612
+#: options.php:1704
+#: options.php:1773
+#: options.php:1835
+#: options.php:1842
+#: options.php:1975
+#@ options_check
+msgid "Standard er gennemsigtig."
+msgstr ""
+
+#: options.php:1119
+#@ options_check
+msgid "Sektion Top Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1127
+#@ options_check
+msgid "Sektion Top Font Farve:"
+msgstr ""
+
+#: options.php:1135
+#@ options_check
+msgid "Sektion Top Antal"
+msgstr ""
+
+#: options.php:1136
+#: options.php:1222
+#: options.php:1394
+#: options.php:1480
+#@ options_check
+msgid "Standard er 1 Boks."
+msgstr ""
+
+#: options.php:1197
+#@ options_check
+msgid "Sektion 1 Baggrund"
+msgstr ""
+
+#: options.php:1205
+#@ options_check
+msgid "Sektion 1 Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1213
+#@ options_check
+msgid "Sektion 1 Font Farve:"
+msgstr ""
+
+#: options.php:1221
+#@ options_check
+msgid "Sektion 1 Antal"
+msgstr ""
+
+#: options.php:1283
+#@ options_check
+msgid "Sektion 2 Baggrund"
+msgstr ""
+
+#: options.php:1291
+#@ options_check
+msgid "Sektion 2 Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1299
+#@ options_check
+msgid "Sektion 2 Font Farve:"
+msgstr ""
+
+#: options.php:1307
+#@ options_check
+msgid "Sektion 2 Antal"
+msgstr ""
+
+#: options.php:1308
+#: options.php:1991
+#@ options_check
+msgid "Standard er 3 Bokse ved siden af hinanden."
+msgstr ""
+
+#: options.php:1369
+#@ options_check
+msgid "Sektion 3 Baggrund"
+msgstr ""
+
+#: options.php:1377
+#@ options_check
+msgid "Sektion 3 Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1385
+#@ options_check
+msgid "Sektion 3 Font Farve:"
+msgstr ""
+
+#: options.php:1393
+#@ options_check
+msgid "Sektion 3 Antal"
+msgstr ""
+
+#: options.php:1455
+#@ options_check
+msgid "Sektion 4 Baggrund"
+msgstr ""
+
+#: options.php:1463
+#@ options_check
+msgid "Sektion 4 Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1471
+#@ options_check
+msgid "Sektion 4 Font Farve:"
+msgstr ""
+
+#: options.php:1479
+#@ options_check
+msgid "Sektion 4 Antal"
+msgstr ""
+
+#: options.php:1542
+#@ options_check
+msgid "Indholdområde"
+msgstr ""
+
+#: options.php:1604
+#@ options_check
+msgid "Venstre Sidebar Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1618
+#@ options_check
+msgid "Venstre Sidebar Font Farve:"
+msgstr ""
+
+#: options.php:1664
+#@ options_check
+msgid "Venstre Sidebar PC (large) Størrelse"
+msgstr ""
+
+#: options.php:1665
+#: options.php:1674
+#: options.php:1683
+#: options.php:1895
+#: options.php:1904
+#: options.php:1913
+#@ options_check
+msgid "Standard er 3."
+msgstr ""
+
+#: options.php:1673
+#@ options_check
+msgid "Venstre Sidebar Tablet (medium) Størrelse"
+msgstr ""
+
+#: options.php:1682
+#@ options_check
+msgid "Venstre Sidebar Tablet Højkant (small) Størrelse"
+msgstr ""
+
+#: options.php:1834
+#@ options_check
+msgid "Højre Sidebar Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1848
+#@ options_check
+msgid "Højre Sidebar Font Farve:"
+msgstr ""
+
+#: options.php:1894
+#@ options_check
+msgid "Højre Sidebar PC (large) Størrelse"
+msgstr ""
+
+#: options.php:1903
+#@ options_check
+msgid "Højre Sidebar Tablet (medium) Størrelse"
+msgstr ""
+
+#: options.php:1912
+#@ options_check
+msgid "Højre Sidebar Tablet Højkant (small) Størrelse"
+msgstr ""
+
+#: options.php:1926
+#@ options_check
+msgid "Luft på begge sider omkring undhold på PC (large) Størrelse"
+msgstr ""
+
+#: options.php:1927
+#@ options_check
+msgid "Til brug hvis \"Narrow Content Area\" Skabelon er valgt. Standard er 1."
+msgstr ""
+
+#: options.php:1955
+#@ options_check
+msgid "Footer"
+msgstr ""
+
+#: options.php:1966
+#@ options_check
+msgid "Footer Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1974
+#@ options_check
+msgid "Footer Bokse Indre Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1982
+#@ options_check
+msgid "Footer Bokse Font Farve:"
+msgstr ""
+
+#: options.php:1990
+#@ options_check
+msgid "Footer Bokse Antal"
+msgstr ""
+
+#: options.php:2045
+#@ options_check
+msgid "Footer Baggrundsfarve:"
+msgstr ""
+
+#: options.php:2046
+#@ options_check
+msgid "Standard er #3f4b4d."
+msgstr ""
+
+#: options.php:2052
+#@ options_check
+msgid "Footer Font Farve:"
+msgstr ""
+
+#: options.php:2064
+#@ options_check
+msgid "Sticky Footer"
+msgstr ""
+
+#: options.php:2065
+#@ options_check
+msgid "Footer vil altid blive i bunden af siden."
+msgstr ""
+
+#: options.php:2071
+#@ options_check
+msgid "Sticky Footer Højde"
+msgstr ""
+
+#: options.php:2072
+#@ options_check
+msgid "Denne skal passe med den maksimale højde som Footer og Footer Bokse fylder."
+msgstr ""
+
+#: template-part-mainnav.php:10
+#: template-part-offcanvasnav.php:13
+#: template-part-phonenav.php:24
+#@ certa
+msgid "Toggle navigation"
+msgstr ""
+
+#: index.php:86
+#: narrow-page.php:91
+#@ certa
+msgid "Read more"
+msgstr ""
+
+#: lib/spacer-widget.php:35
+#@ certa
+msgid "A Empty Spacer Module without content"
+msgstr ""
+
+#: lib/spacer-widget.php:37
+#@ certa
+msgid "Spacer Widget"
+msgstr ""
+
+#: options.php:44
+#@ options_check
+msgid "Venstre Side"
+msgstr ""
+
+#: options.php:45
+#@ options_check
+msgid "Højre Side"
+msgstr ""
+
+#: options.php:83
+#@ options_check
+msgid "Top Venstre"
+msgstr ""
+
+#: options.php:84
+#@ options_check
+msgid "Top Højre"
+msgstr ""
+
+#: options.php:85
+#@ options_check
+msgid "Bund Venstre"
+msgstr ""
+
+#: options.php:86
+#@ options_check
+msgid "Bund Højre"
+msgstr ""
+
+#: options.php:395
+#@ options_check
+msgid "Indrammet side Kant Farve:"
+msgstr ""
+
+#: options.php:403
+#@ options_check
+msgid "Indrammet side Top Luft"
+msgstr ""
+
+#: options.php:404
+#@ options_check
+msgid "Standard er 15."
+msgstr ""
+
+#: options.php:795
+#@ options_check
+msgid "Top Menu (Phone) Baggrundsfarve:"
+msgstr ""
+
+#: options.php:802
+#@ options_check
+msgid "Top Menu (Phone) Kant Farve:"
+msgstr ""
+
+#: options.php:808
+#@ options_check
+msgid "Top Menu (Phone) Typografi:"
+msgstr ""
+
+#: options.php:605
+#: options.php:647
+#: options.php:809
+#@ options_check
+msgid "Standard font farve er #f6f6f6."
+msgstr ""
+
+#: options.php:831
+#@ options_check
+msgid "Top Menu (Phone) Aktiv Baggrund Farve:"
+msgstr ""
+
+#: options.php:895
+#@ options_check
+msgid "Off-Canvas Menu (Phone)"
+msgstr ""
+
+#: options.php:896
+#@ options_check
+msgid "Hvis aktiveret vil denne blive brugt i stedet for den normal Top Menu. Bemærk at menuen nedarver farve indstillinger fra Top Menu."
+msgstr ""
+
+#: options.php:902
+#@ options_check
+msgid "Off-Canvas Top Widget Antal"
+msgstr ""
+
+#: options.php:911
+#@ options_check
+msgid "Off-Canvas tekst Etiket"
+msgstr ""
+
+#: options.php:919
+#@ options_check
+msgid "Off-canvas Menu placering"
+msgstr ""
+
+#: options.php:920
+#: options.php:929
+#@ options_check
+msgid "Vælg position Venstre (standard) eller Højre."
+msgstr ""
+
+#: options.php:928
+#@ options_check
+msgid "Off-canvas Knap placering"
+msgstr ""
+
+#: options.php:1144
+#@ options_check
+msgid "Sektion Top luft i toppen"
+msgstr ""
+
+#: options.php:1017
+#: options.php:1025
+#: options.php:1145
+#: options.php:1231
+#: options.php:1317
+#: options.php:1403
+#: options.php:1489
+#: options.php:1584
+#: options.php:1592
+#: options.php:1626
+#: options.php:1634
+#: options.php:1728
+#: options.php:1789
+#: options.php:1856
+#: options.php:1864
+#: options.php:2000
+#@ options_check
+msgid "Standard er 20"
+msgstr ""
+
+#: options.php:1152
+#@ options_check
+msgid "Sektion Top luft i bunden"
+msgstr ""
+
+#: options.php:853
+#: options.php:1153
+#: options.php:1239
+#: options.php:1325
+#: options.php:1411
+#: options.php:1497
+#: options.php:2008
+#@ options_check
+msgid "Standard er 10"
+msgstr ""
+
+#: options.php:1160
+#@ options_check
+msgid "Sektion Top runde hjørner"
+msgstr ""
+
+#: options.php:1161
+#: options.php:1247
+#: options.php:1333
+#: options.php:1419
+#: options.php:1505
+#: options.php:1642
+#: options.php:1736
+#: options.php:1805
+#: options.php:1872
+#: options.php:2016
+#@ options_check
+msgid "Standard er 0. Tallet afgører hvor runde hjørnerne er på bokse. Virker kun når der er valgt Baggrundsfarve på bokse."
+msgstr ""
+
+#: options.php:1168
+#@ options_check
+msgid "Sektion Top runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1041
+#: options.php:1169
+#: options.php:1255
+#: options.php:1341
+#: options.php:1427
+#: options.php:1513
+#: options.php:1650
+#: options.php:1744
+#: options.php:1813
+#: options.php:1880
+#: options.php:2024
+#@ options_check
+msgid "Standard er alle valgte, fravælg dem der ikke skal være runde."
+msgstr ""
+
+#: options.php:1177
+#@ options_check
+msgid "Sektion Top Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1050
+#: options.php:1178
+#: options.php:1264
+#: options.php:1350
+#: options.php:1436
+#: options.php:1522
+#: options.php:1658
+#: options.php:1753
+#: options.php:1822
+#: options.php:1888
+#: options.php:2033
+#@ options_check
+msgid "Standard er tom, dvs. ingen Kant. Virker kun når der er valgt Baggrundsfarve på bokse."
+msgstr ""
+
+#: options.php:1230
+#@ options_check
+msgid "Sektion 1 luft i toppen"
+msgstr ""
+
+#: options.php:1238
+#@ options_check
+msgid "Sektion 1 luft i bunden"
+msgstr ""
+
+#: options.php:1246
+#@ options_check
+msgid "Sektion 1 runde hjørner"
+msgstr ""
+
+#: options.php:1254
+#@ options_check
+msgid "Sektion 1 runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1263
+#@ options_check
+msgid "Sektion 1 Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1316
+#@ options_check
+msgid "Sektion 2 luft i toppen"
+msgstr ""
+
+#: options.php:1324
+#@ options_check
+msgid "Sektion 2 luft i bunden"
+msgstr ""
+
+#: options.php:1332
+#@ options_check
+msgid "Sektion 2 runde hjørner"
+msgstr ""
+
+#: options.php:1340
+#@ options_check
+msgid "Sektion 2 runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1349
+#@ options_check
+msgid "Sektion 2 Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1402
+#@ options_check
+msgid "Sektion 3 luft i toppen"
+msgstr ""
+
+#: options.php:1410
+#@ options_check
+msgid "Sektion 3 luft i bunden"
+msgstr ""
+
+#: options.php:1418
+#@ options_check
+msgid "Sektion 3 runde hjørner"
+msgstr ""
+
+#: options.php:1426
+#@ options_check
+msgid "Sektion 3 runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1435
+#@ options_check
+msgid "Sektion 3 Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1488
+#@ options_check
+msgid "Sektion 4 luft i toppen"
+msgstr ""
+
+#: options.php:1496
+#@ options_check
+msgid "Sektion 4 luft i bunden"
+msgstr ""
+
+#: options.php:1504
+#@ options_check
+msgid "Sektion 4 runde hjørner"
+msgstr ""
+
+#: options.php:1512
+#@ options_check
+msgid "Sektion 4 runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1521
+#@ options_check
+msgid "Sektion 4 Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1999
+#@ options_check
+msgid "Footer Bokse luft i toppen"
+msgstr ""
+
+#: options.php:2007
+#@ options_check
+msgid "Footer Bokse luft i bunden"
+msgstr ""
+
+#: options.php:2015
+#@ options_check
+msgid "Footer Bokse runde hjørner"
+msgstr ""
+
+#: options.php:2023
+#@ options_check
+msgid "Footer Bokse runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:2032
+#@ options_check
+msgid "Footer Bokse Kant Farve:"
+msgstr ""
+
+#: functions.php:39
+#@ certa
+msgid "Bootstrap Styles"
+msgstr ""
+
+#: functions.php:42
+#@ certa
+msgid "Default Button"
+msgstr ""
+
+#: functions.php:47
+#@ certa
+msgid "Primary Button"
+msgstr ""
+
+#: lib/bootstrap-custom-menu-widget.php:89
+#@ certa
+msgid "Menu Direction"
+msgstr ""
+
+#: options.php:57
+#@ options_check
+msgid "12"
+msgstr ""
+
+#: options.php:58
+#@ options_check
+msgid "11"
+msgstr ""
+
+#: options.php:59
+#@ options_check
+msgid "10"
+msgstr ""
+
+#: options.php:60
+#@ options_check
+msgid "9"
+msgstr ""
+
+#: options.php:61
+#@ options_check
+msgid "8"
+msgstr ""
+
+#: options.php:62
+#@ options_check
+msgid "7"
+msgstr ""
+
+#: options.php:63
+#: options.php:73
+#@ options_check
+msgid "6"
+msgstr ""
+
+#: options.php:505
+#@ options_check
+msgid "Venstre Header Boks PC (large) Størrelse"
+msgstr ""
+
+#: options.php:506
+#: options.php:515
+#: options.php:524
+#: options.php:2086
+#@ options_check
+msgid "Standard er 4."
+msgstr ""
+
+#: options.php:514
+#@ options_check
+msgid "Venstre Header Boks Tablet (medium) Størrelse"
+msgstr ""
+
+#: options.php:523
+#@ options_check
+msgid "Venstre Header Boks Tablet Højkant (small) Størrelse"
+msgstr ""
+
+#: options.php:532
+#@ options_check
+msgid "Venstre Header Boks Mobil (ekstra small) Størrelse"
+msgstr ""
+
+#: options.php:533
+#: options.php:1085
+#@ options_check
+msgid "Standard er 12."
+msgstr ""
+
+#: options.php:542
+#@ options_check
+msgid "Bemærk: Venstre Header Boks Størrelser er kun aktuelt når Højre Header Boks \"Widget\" er i brug."
+msgstr ""
+
+#: options.php:838
+#@ options_check
+msgid "Top Menu (Phone) Knap Kant Farve:"
+msgstr ""
+
+#: options.php:845
+#@ options_check
+msgid "Top Menu (Phone) Knap Ikon Farve:"
+msgstr ""
+
+#: options.php:852
+#@ options_check
+msgid "Top Menu (Phone) Luft over Knap"
+msgstr ""
+
+#: options.php:860
+#@ options_check
+msgid "Top Menu (Phone) Logo"
+msgstr ""
+
+#: options.php:861
+#@ options_check
+msgid "Upload eller vælg Logo til Top Menu."
+msgstr ""
+
+#: options.php:874
+#@ options_check
+msgid "Top Menu (Phone) højde"
+msgstr ""
+
+#: options.php:875
+#@ options_check
+msgid "Standard er 50"
+msgstr ""
+
+#: options.php:882
+#@ options_check
+msgid "Top Menu (Phone) Luft over menu"
+msgstr ""
+
+#: options.php:883
+#: options.php:965
+#: options.php:973
+#: options.php:1554
+#: options.php:1562
+#: options.php:1720
+#: options.php:1797
+#@ options_check
+msgid "Standard er 0"
+msgstr ""
+
+#: options.php:903
+#@ options_check
+msgid "Standard er 2 Bokse. Widget er kun tilgænglig når Off-Canvas Menu er valgt. Bemærk at selve Menu knappen også tæller som en boks."
+msgstr ""
+
+#: options.php:912
+#@ options_check
+msgid "Hvis aktiveret vil teksten \"MENU\" være synlig."
+msgstr ""
+
+#: options.php:941
+#@ options_check
+msgid "Slider Sektion"
+msgstr ""
+
+#: options.php:942
+#@ options_check
+msgid "Vis Slider widget område."
+msgstr ""
+
+#: options.php:948
+#@ options_check
+msgid "Slider Fuldskærm"
+msgstr ""
+
+#: options.php:949
+#@ options_check
+msgid "Vis Slider widget fra kant til kant."
+msgstr ""
+
+#: options.php:956
+#@ options_check
+msgid "Slider Baggrundsfarve:"
+msgstr ""
+
+#: options.php:964
+#@ options_check
+msgid "Slider luft i toppen"
+msgstr ""
+
+#: options.php:972
+#@ options_check
+msgid "Slider luft i bunden"
+msgstr ""
+
+#: options.php:1104
+#@ options_check
+msgid "Sektion Top"
+msgstr ""
+
+#: options.php:1105
+#@ options_check
+msgid "Vis Sektion Top widget område."
+msgstr ""
+
+#: options.php:1190
+#@ options_check
+msgid "Sektion 1"
+msgstr ""
+
+#: options.php:1191
+#@ options_check
+msgid "Vis Sektion 1 widget område."
+msgstr ""
+
+#: options.php:1276
+#@ options_check
+msgid "Sektion 2"
+msgstr ""
+
+#: options.php:1277
+#@ options_check
+msgid "Vis Sektion 2 widget område."
+msgstr ""
+
+#: options.php:1362
+#@ options_check
+msgid "Sektion 3"
+msgstr ""
+
+#: options.php:1363
+#@ options_check
+msgid "Vis Sektion 3 widget område."
+msgstr ""
+
+#: options.php:1448
+#@ options_check
+msgid "Sektion 4"
+msgstr ""
+
+#: options.php:1449
+#@ options_check
+msgid "Vis Sektion 4 widget område."
+msgstr ""
+
+#: options.php:1534
+#@ options_check
+msgid "Padding omkring Bokse"
+msgstr ""
+
+#: options.php:1535
+#@ options_check
+msgid "Virker kun når der er valgt Baggrundsfarve på bokse."
+msgstr ""
+
+#: options.php:1546
+#@ options_check
+msgid "Ydre Indholdområde Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1553
+#@ options_check
+msgid "Ydre Indholdområde luft i toppen"
+msgstr ""
+
+#: options.php:1561
+#@ options_check
+msgid "Ydre Indholdområde luft i bunden"
+msgstr ""
+
+#: options.php:1569
+#@ options_check
+msgid "Indre Indholdområde Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1576
+#@ options_check
+msgid "Indre Indholdområde Font Farve:"
+msgstr ""
+
+#: options.php:1583
+#@ options_check
+msgid "Indre Indholdområde luft i toppen"
+msgstr ""
+
+#: options.php:1591
+#@ options_check
+msgid "Indre Indholdområde luft i bunden"
+msgstr ""
+
+#: options.php:1611
+#@ options_check
+msgid "Venstre Sidebar Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1625
+#@ options_check
+msgid "Venstre Sidebar luft i toppen"
+msgstr ""
+
+#: options.php:1633
+#@ options_check
+msgid "Venstre Sidebar luft i bunden"
+msgstr ""
+
+#: options.php:1641
+#@ options_check
+msgid "Venstre Sidebar runde hjørner"
+msgstr ""
+
+#: options.php:1649
+#@ options_check
+msgid "Venstre Sidebar runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1657
+#@ options_check
+msgid "Venstre Sidebar Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1696
+#@ options_check
+msgid "Over indholds widget"
+msgstr ""
+
+#: options.php:1697
+#@ options_check
+msgid "Vis Over indholds widget område."
+msgstr ""
+
+#: options.php:1703
+#@ options_check
+msgid "Over indholds widget Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1711
+#@ options_check
+msgid "Over indholds widget Font Farve:"
+msgstr ""
+
+#: options.php:1719
+#@ options_check
+msgid "Over indholds widget luft i toppen"
+msgstr ""
+
+#: options.php:1727
+#@ options_check
+msgid "Over indholds widget luft i bunden"
+msgstr ""
+
+#: options.php:1735
+#@ options_check
+msgid "Over indholds widget runde hjørner"
+msgstr ""
+
+#: options.php:1743
+#@ options_check
+msgid "Over indholds widget runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1752
+#@ options_check
+msgid "Over indholds widget Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1765
+#@ options_check
+msgid "Under indholds widget"
+msgstr ""
+
+#: options.php:1766
+#@ options_check
+msgid "Vis Under indholds widget område."
+msgstr ""
+
+#: options.php:1772
+#@ options_check
+msgid "Under indholds widget Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1780
+#@ options_check
+msgid "Under indholds widget Font Farve:"
+msgstr ""
+
+#: options.php:1788
+#@ options_check
+msgid "Under indholds widget luft i toppen"
+msgstr ""
+
+#: options.php:1796
+#@ options_check
+msgid "Under indholds widget luft i bunden"
+msgstr ""
+
+#: options.php:1804
+#@ options_check
+msgid "Under indholds widget runde hjørner"
+msgstr ""
+
+#: options.php:1812
+#@ options_check
+msgid "Under indholds widget runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1821
+#@ options_check
+msgid "Under indholds widget Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1841
+#@ options_check
+msgid "Højre Sidebar Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1855
+#@ options_check
+msgid "Højre Sidebar luft i toppen"
+msgstr ""
+
+#: options.php:1863
+#@ options_check
+msgid "Højre Sidebar luft i bunden"
+msgstr ""
+
+#: options.php:1871
+#@ options_check
+msgid "Højre Sidebar runde hjørner"
+msgstr ""
+
+#: options.php:1879
+#@ options_check
+msgid "Højre Sidebar runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1887
+#@ options_check
+msgid "Højre Sidebar Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1940
+#@ options_check
+msgid "Vis Postmeta på Indlæg"
+msgstr ""
+
+#: options.php:1941
+#@ options_check
+msgid "Eksempel Dato og/eller Tid."
+msgstr ""
+
+#: options.php:1947
+#@ options_check
+msgid "Postmeta Format"
+msgstr ""
+
+#: options.php:1948
+#@ options_check
+msgid "Se tilgængelige formater: http://php.net/manual/en/function.date.php"
+msgstr ""
+
+#: options.php:1959
+#@ options_check
+msgid "Footer Bokse"
+msgstr ""
+
+#: options.php:1960
+#@ options_check
+msgid "Vis Footer Bokse widget område."
+msgstr ""
+
+#: options.php:2081
+#@ options_check
+msgid "Shop"
+msgstr ""
+
+#: options.php:2085
+#@ options_check
+msgid "Produkter per række"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:36
+#@ woocommerce
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:55
+#@ woocommerce
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:63
+#@ woocommerce
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:68
+#@ woocommerce
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:69
+#@ woocommerce
+msgid "Checkout"
+msgstr ""
+
+#: woocommerce/product-searchform.php:2
+#@ woocommerce
+msgid "Search for:"
+msgstr ""
+
+#: woocommerce/product-searchform.php:3
+#@ woocommerce
+msgctxt "placeholder"
+msgid "Search Products&hellip;"
+msgstr ""
+
+#: woocommerce/product-searchform.php:3
+#@ woocommerce
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: woocommerce/product-searchform.php:4
+#@ woocommerce
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: functions.php:52
+#@ certa
+msgid "Success Button"
+msgstr ""
+
+#: functions.php:57
+#@ certa
+msgid "Info Button"
+msgstr ""
+
+#: functions.php:62
+#@ certa
+msgid "Warning Button"
+msgstr ""
+
+#: functions.php:67
+#@ certa
+msgid "Danger Button"
+msgstr ""
+
+#: lib/subnav-menu-widget.php:15
+#@ certa
+msgid "A custom menu widget that uses the wp_subnav_navwalker"
+msgstr ""
+
+#: lib/subnav-menu-widget.php:19
+#@ certa
+msgid "SubNav Menu"
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:91
+#: optionframework/includes/class-options-framework-admin.php:92
+#@ certa
+msgid "Theme Options"
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:203
+#@ certa
+msgid "Save Options"
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:204
+#@ certa
+msgid "Restore Defaults"
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:204
+#@ certa
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:235
+#@ theme-textdomain
+msgid "Default options restored."
+msgstr ""
+
+#: optionframework/includes/class-options-framework-admin.php:289
+#@ theme-textdomain
+msgid "Options saved."
+msgstr ""
+
+#: optionframework/includes/class-options-media-uploader.php:62
+#@ theme-textdomain
+msgid "No file chosen"
+msgstr ""
+
+#: optionframework/includes/class-options-media-uploader.php:65
+#: optionframework/includes/class-options-media-uploader.php:118
+#@ theme-textdomain
+msgid "Upload"
+msgstr ""
+
+#: optionframework/includes/class-options-media-uploader.php:67
+#: optionframework/includes/class-options-media-uploader.php:119
+#@ theme-textdomain
+msgid "Remove"
+msgstr ""
+
+#: optionframework/includes/class-options-media-uploader.php:70
+#@ theme-textdomain
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: optionframework/includes/class-options-media-uploader.php:94
+#@ theme-textdomain
+msgid "View File"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:316
+#@ theme-textdomain
+msgid "No Repeat"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:317
+#@ theme-textdomain
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:318
+#@ theme-textdomain
+msgid "Repeat Vertically"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:319
+#@ theme-textdomain
+msgid "Repeat All"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:331
+#@ theme-textdomain
+msgid "Top Left"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:332
+#@ theme-textdomain
+msgid "Top Center"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:333
+#@ theme-textdomain
+msgid "Top Right"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:334
+#@ theme-textdomain
+msgid "Middle Left"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:335
+#@ theme-textdomain
+msgid "Middle Center"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:336
+#@ theme-textdomain
+msgid "Middle Right"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:337
+#@ theme-textdomain
+msgid "Bottom Left"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:338
+#@ theme-textdomain
+msgid "Bottom Center"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:339
+#@ theme-textdomain
+msgid "Bottom Right"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:351
+#@ theme-textdomain
+msgid "Scroll Normally"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:352
+#@ theme-textdomain
+msgid "Fixed in Place"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:424
+#@ theme-textdomain
+msgid "Normal"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:425
+#@ theme-textdomain
+msgid "Italic"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:426
+#@ theme-textdomain
+msgid "Bold"
+msgstr ""
+
+#: optionframework/includes/class-options-sanitization.php:427
+#@ theme-textdomain
+msgid "Bold Italic"
+msgstr ""
+
+#: options.php:112
+#@ options_check
+msgid "Ingen"
+msgstr ""
+
+#: options.php:113
+#@ options_check
+msgid "Understregning"
+msgstr ""
+
+#: options.php:259
+#@ options_check
+msgid "Linje Højde (line-height)"
+msgstr ""
+
+#: options.php:260
+#@ options_check
+msgid "Standard er 1.42857"
+msgstr ""
+
+#: options.php:267
+#@ options_check
+msgid "Link Font Farve:"
+msgstr ""
+
+#: options.php:268
+#: options.php:761
+#@ options_check
+msgid "Standard er #333333."
+msgstr ""
+
+#: options.php:274
+#@ options_check
+msgid "Link Understregning"
+msgstr ""
+
+#: options.php:275
+#: options.php:291
+#@ options_check
+msgid "Standard er Understreget."
+msgstr ""
+
+#: options.php:290
+#@ options_check
+msgid "Link Hover Understregning"
+msgstr ""
+
+#: options.php:328
+#@ options_check
+msgid "Linje Højde (line-height) på overskrifter (h1, h2 og h3)"
+msgstr ""
+
+#: options.php:329
+#@ options_check
+msgid "Standard er 1.1"
+msgstr ""
+
+#: options.php:336
+#@ options_check
+msgid "Margin på overskrifter (h1, h2 og h3)"
+msgstr ""
+
+#: options.php:337
+#@ options_check
+msgid "Standard er (20px 0 10px 0)"
+msgstr ""
+
+#: options.php:387
+#@ options_check
+msgid "Indrammet side Kant Tykkelse"
+msgstr ""
+
+#: options.php:388
+#@ options_check
+msgid "Standard er 0, dvs. ingen Kant."
+msgstr ""
+
+#: options.php:411
+#@ options_check
+msgid "Indrammet side Skygge"
+msgstr ""
+
+#: options.php:412
+#@ options_check
+msgid "Standard er \"none\". Et eksempel på skygge: 0px 0px 5px 3px rgba(0, 0, 0, 0.3)"
+msgstr ""
+
+#: options.php:424
+#@ options_check
+msgid "Overskrivning af PC view side bredde"
+msgstr ""
+
+#: options.php:425
+#@ options_check
+msgid "Standard er tom, dvs. standard PC størrelse (1170). Et eksempel kunne være at sætte den til Tablet-Bred størrelse (970)."
+msgstr ""
+
+#: options.php:437
+#@ options_check
+msgid "Primary Bootstrap Knap - Baggrund Farve:"
+msgstr ""
+
+#: options.php:438
+#@ options_check
+msgid "Standard er #337ab7."
+msgstr ""
+
+#: options.php:444
+#@ options_check
+msgid "Success Bootstrap Knap - Baggrund Farve:"
+msgstr ""
+
+#: options.php:445
+#@ options_check
+msgid "Standard er #5cb85c."
+msgstr ""
+
+#: options.php:451
+#@ options_check
+msgid "Info Bootstrap Knap - Baggrund Farve:"
+msgstr ""
+
+#: options.php:452
+#@ options_check
+msgid "Standard er #5bc0de."
+msgstr ""
+
+#: options.php:458
+#@ options_check
+msgid "Warning Bootstrap Knap - Baggrund Farve:"
+msgstr ""
+
+#: options.php:459
+#@ options_check
+msgid "Standard er #f0ad4e."
+msgstr ""
+
+#: options.php:465
+#@ options_check
+msgid "Danger Bootstrap Knap - Baggrund Farve:"
+msgstr ""
+
+#: options.php:466
+#@ options_check
+msgid "Standard er #d9534f."
+msgstr ""
+
+#: options.php:589
+#@ options_check
+msgid "Vis Hovedmenu Sektion"
+msgstr ""
+
+#: options.php:590
+#@ options_check
+msgid "Hovedmenu Sektion vil som standard blive vist på siden."
+msgstr ""
+
+#: options.php:596
+#@ options_check
+msgid "Brug Dropdown i Hovedmenu"
+msgstr ""
+
+#: options.php:597
+#: options.php:701
+#@ options_check
+msgid "Standard er Aktiveret."
+msgstr ""
+
+#: options.php:604
+#@ options_check
+msgid "Hovedmenu Typografi:"
+msgstr ""
+
+#: options.php:622
+#@ options_check
+msgid "Hovedmenu Hover Font Farve:"
+msgstr ""
+
+#: options.php:630
+#@ options_check
+msgid "Hovedmenu Aktiv Font Farve:"
+msgstr ""
+
+#: options.php:646
+#@ options_check
+msgid "Hovedmenu Dropdown Typografi:"
+msgstr ""
+
+#: options.php:656
+#@ options_check
+msgid "Hovedmenu Dropdown Baggrund Farve:"
+msgstr ""
+
+#: options.php:664
+#@ options_check
+msgid "Hovedmenu Dropdown Hover Font Farve:"
+msgstr ""
+
+#: options.php:672
+#@ options_check
+msgid "Hovedmenu Dropdown Aktiv Font Farve:"
+msgstr ""
+
+#: options.php:680
+#@ options_check
+msgid "Hovedmenu Dropdown Aktiv Baggrund Farve:"
+msgstr ""
+
+#: options.php:693
+#@ options_check
+msgid "Vis Højre Headermenu"
+msgstr ""
+
+#: options.php:694
+#@ options_check
+msgid "Headermenu vil som standard ikke blive vist på siden."
+msgstr ""
+
+#: options.php:700
+#@ options_check
+msgid "Brug Dropdown i Headermenu"
+msgstr ""
+
+#: options.php:708
+#@ options_check
+msgid "Headermenu Typografi:"
+msgstr ""
+
+#: options.php:709
+#: options.php:735
+#@ options_check
+msgid "Standard font farve er #333333."
+msgstr ""
+
+#: options.php:718
+#@ options_check
+msgid "Headermenu Hover Font Farve:"
+msgstr ""
+
+#: options.php:719
+#: options.php:727
+#: options.php:753
+#@ options_check
+msgid "Standard er nedarvet."
+msgstr ""
+
+#: options.php:726
+#@ options_check
+msgid "Headermenu Aktiv Font Farve:"
+msgstr ""
+
+#: options.php:734
+#@ options_check
+msgid "Headermenu Dropdown Typografi:"
+msgstr ""
+
+#: options.php:744
+#@ options_check
+msgid "Headermenu Dropdown Baggrund Farve:"
+msgstr ""
+
+#: options.php:752
+#@ options_check
+msgid "Headermenu Dropdown Hover Font Farve:"
+msgstr ""
+
+#: options.php:760
+#@ options_check
+msgid "Headermenu Dropdown Aktiv Font Farve:"
+msgstr ""
+
+#: options.php:768
+#@ options_check
+msgid "Headermenu Dropdown Aktiv Baggrund Farve:"
+msgstr ""
+
+#: options.php:781
+#@ options_check
+msgid "Synlig Top (Phone) Menu"
+msgstr ""
+
+#: options.php:788
+#@ options_check
+msgid "Scroll Top (Phone) Menu"
+msgstr ""
+
+#: options.php:817
+#@ options_check
+msgid "Top Menu (Phone) Hover Font Farve:"
+msgstr ""
+
+#: options.php:824
+#@ options_check
+msgid "Top Menu (Phone) Aktiv Font Farve:"
+msgstr ""
+
+#: options.php:866
+#@ options_check
+msgid "Top Menu (Phone) Luft over Logo"
+msgstr ""
+
+#: options.php:867
+#@ options_check
+msgid "Standard er 15"
+msgstr ""
+
+#: options.php:985
+#@ options_check
+msgid "To kolonne Sektion"
+msgstr ""
+
+#: options.php:986
+#@ options_check
+msgid "Vis de to kolonne widget områder."
+msgstr ""
+
+#: options.php:992
+#@ options_check
+msgid "To kolonne Sektion Baggrund"
+msgstr ""
+
+#: options.php:1000
+#@ options_check
+msgid "To kolonne Sektion Bokse Baggrundsfarve:"
+msgstr ""
+
+#: options.php:1001
+#@ options_check
+msgid "Standard er #ffffff."
+msgstr ""
+
+#: options.php:1008
+#@ options_check
+msgid "To kolonne Sektion Font Farve:"
+msgstr ""
+
+#: options.php:1016
+#@ options_check
+msgid "To kolonne Sektion luft i toppen"
+msgstr ""
+
+#: options.php:1024
+#@ options_check
+msgid "To kolonne Sektion luft i bunden af hver widget"
+msgstr ""
+
+#: options.php:1032
+#@ options_check
+msgid "To kolonne Sektion Boks runde hjørner"
+msgstr ""
+
+#: options.php:1033
+#@ options_check
+msgid "Standard er 10. Tallet afgører hvor runde hjørnerne er på bokse. Virker kun når der er valgt Baggrundsfarve på bokse."
+msgstr ""
+
+#: options.php:1040
+#@ options_check
+msgid "To kolonne Sektion Boks runde hjørner valgte hjørner"
+msgstr ""
+
+#: options.php:1049
+#@ options_check
+msgid "To kolonne Sektion Boks Kant Farve:"
+msgstr ""
+
+#: options.php:1057
+#@ options_check
+msgid "Venstre Kolonne PC (large) Størrelse"
+msgstr ""
+
+#: options.php:1058
+#: options.php:1067
+#: options.php:1076
+#@ options_check
+msgid "Standard er 6."
+msgstr ""
+
+#: options.php:1066
+#@ options_check
+msgid "Venstre Kolonne Tablet (medium) Størrelse"
+msgstr ""
+
+#: options.php:1075
+#@ options_check
+msgid "Venstre Kolonne Tablet Højkant (small) Størrelse"
+msgstr ""
+
+#: options.php:1084
+#@ options_check
+msgid "Venstre Kolonne Mobil (ekstra small) Størrelse"
+msgstr ""
+
+#: options.php:1094
+#@ options_check
+msgid "Bemærk: Højre Kolonne Størrelser er udregnet baseret på Venstre Kolonne indstillingerne."
+msgstr ""
+

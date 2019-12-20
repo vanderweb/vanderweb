@@ -1,0 +1,15 @@
+.border-gray-light {
+	border: 1px solid #cccccc;
+}
+.border-gray {
+	border: 1px solid #999999;
+}
+.border-gray-dark {
+	border: 1px solid #666666;
+}
+.border-gray-darker {
+	border: 1px solid #333333;
+}
+.border-black {
+	border: 1px solid #000000;
+}
