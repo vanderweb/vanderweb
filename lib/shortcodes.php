@@ -20,7 +20,7 @@ function vanderwebfeaturedimage_func( $atts ){
 	$featuredimage = wp_get_attachment_image_src( get_post_thumbnail_id( $postid ), $size, false, '');
 	
 	if($featuredimage){
-		$featuredimagehtml = '<div id="kumento-featuredimage-widget-'.$postid.'" class="kumento-featuredimage-widget '.$class.'">';	
+		$featuredimagehtml = '<div id="vanderweb-featuredimage-widget-'.$postid.'" class="vanderweb-featuredimage-widget '.$class.'">';	
 		$featuredimagehtml .= '<a href="'.$featuredimage[0].'" class="fancybox" rel="gallery'.$postid.'" title="'.$posttitle.'">';
 		$featuredimagehtml .= '<img class="img-responsive" src="'.$featuredimage[0].'" alt="'.$posttitle.'" title="'.$posttitle.'" width="'.$featuredimage[1].'" height="'.$featuredimage[2].'" />';
 		$featuredimagehtml .= '</a>';
@@ -82,7 +82,7 @@ function customsearchform_func( $atts ){
   break;
  }
 
-	$searchformhtml = '<div class="kumento-shortcode-searchform searchform-layout-'.$layout.' '.$class.'">';
+	$searchformhtml = '<div class="vanderweb-shortcode-searchform searchform-layout-'.$layout.' '.$class.'">';
 	$searchformhtml .= '<form role="search" method="get" id="searchform" action="'.home_url( '/' ).$slug.'">';
 	$searchformhtml .= '<div class="search-form">';
  $searchformhtml .= $shlayout_icon;
@@ -117,7 +117,7 @@ function get_cookies_func( $paras = '', $content = '' ) {
  if ( $content == '' ) { $seperator = ' : '; } else { $seperator = $content; }
  $cookie = $_COOKIE;
  ksort( $cookie );
- $content = "<div class='kumentocookies'>";
+ $content = "<div class='vanderwebcookies'>";
   $content .= "<table class='table table-striped'>";
    $content .= "<thead><tr>";
     $content .= "<th>Cookie Navn</th>";
@@ -284,16 +284,22 @@ function customcatloop_func( $atts ){
  $category_loop = new WP_Query($args);
  $catloophtml = '';
  if ( $category_loop->have_posts() ){
-  $catloophtml .= '<div id="kumentocategory-slug-'.$slug.'" class="kumentocategory-loop '.$class.' kumentocategory-layout-'.$layout.'">';
+  $catloophtml .= '<div id="vanderwebcategory-slug-'.$slug.'" class="vanderwebcategory-loop '.$class.' vanderwebcategory-layout-'.$layout.'">';
   if ($title != ''){
-   $catloophtml .= '<div class="kumentocategory-header"><h3>'.$title.'</h3></div>';
+   $catloophtml .= '<div class="vanderwebcategory-header"><h3>'.$title.'</h3></div>';
   }
   switch ($layout) {
    case 2:
-    $catloophtml .= '<ul class="kumentocategory-ul menu">';
+    $catloophtml .= '<ul class="vanderwebcategory-ul menu">';
     break;
    case 3:
-    $catloophtml .= '<div class="kumentocategory-row row '.$rowclass.'">';
+    $catloophtml .= '<div class="vanderwebcategory-row row '.$rowclass.'">';
+    break;
+			case 4:
+    $catloophtml .= '<form action="">';
+				$catloophtml .= '<div class="form-row"><div class="col-auto">';
+				$catloophtml .= '<select class="vanderwebcategory-select form-control" onchange="window.open(this.options[this.selectedIndex].value,\'_self\')">';
+				$catloophtml .= '<option value="" selected disabled>'.$readmore.'</option>';
     break;
   }
   while( $category_loop->have_posts() ){
@@ -311,9 +317,9 @@ function customcatloop_func( $atts ){
    $post_image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', false );
    $post_image_full_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
    if($hideimagefull != 'yes'){
-   $imagelink = '<a class="kumentocategory-image-link fancybox" href="'.$post_image_full_src[0].'">';
+   $imagelink = '<a class="vanderwebcategory-image-link fancybox" href="'.$post_image_full_src[0].'">';
    }else{
-   $imagelink = '<a class="kumentocategory-image-link" href="'.$link.'">';
+   $imagelink = '<a class="vanderwebcategory-image-link" href="'.$link.'">';
    }
    
    if($acf){
@@ -329,13 +335,13 @@ function customcatloop_func( $atts ){
    }
 
    if ($layout == 1):
-     $catloophtml .= '<div class="kumentocategory-row row">';
+     $catloophtml .= '<div class="vanderwebcategory-row row">';
      if($showimage == 'yes' AND $post_image_src){
-     $catloophtml .= '<div class="kumentocategory-image col-12 col-md-'.$imagecolsize.'">';
+     $catloophtml .= '<div class="vanderwebcategory-image col-12 col-md-'.$imagecolsize.'">';
      if($showimagelink == 'yes'){
      $catloophtml .= $imagelink;
      }
-     $catloophtml .= "<div class='kumentocategory-image-inner' style='background-image: url(&#039;".$post_image_full_src[0]."&#039;); background-size: ".$imagesize.";'>";
+     $catloophtml .= "<div class='vanderwebcategory-image-inner' style='background-image: url(&#039;".$post_image_full_src[0]."&#039;); background-size: ".$imagesize.";'>";
      $catloophtml .= '<img src="'.get_template_directory_uri().'/images/blank-'.$imageheight.'.png" alt="'.$title.'" />';
      $catloophtml .= '</div>';
      if($showimagelink == 'yes'){
@@ -345,38 +351,38 @@ function customcatloop_func( $atts ){
      $contentcolsize = 12-$imagecolsize;
      $contentcolsize = 'col-sm-'.$contentcolsize;
      }
-     $catloophtml .= '<div class="kumentocategory-content col-12 '.$contentcolsize.'">';
+     $catloophtml .= '<div class="vanderwebcategory-content col-12 '.$contentcolsize.'">';
      // Link around Title - start
      if($showtitlelink == 'yes'){
-     $catloophtml .= '<a class="kumentocategory-title-link" href="'.$link.'">';
-     $catloophtml .= '<h3 class="kumentocategory-title">'.$title.'</h3>';
+     $catloophtml .= '<a class="vanderwebcategory-title-link" href="'.$link.'">';
+     $catloophtml .= '<h3 class="vanderwebcategory-title">'.$title.'</h3>';
      $catloophtml .= '</a>';
      }else{
-     $catloophtml .= '<h3 class="kumentocategory-title">'.$title.'</h3>'; 
+     $catloophtml .= '<h3 class="vanderwebcategory-title">'.$title.'</h3>'; 
      }
      // Link around Title - end      
      // Meta info - start
      if($hidedate != 'yes' AND $hideauthor == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">'.$date.'</div>'; 
+     $catloophtml .= '<div class="vanderwebcategory-meta">'.$date.'</div>'; 
      }elseif($hidedate == 'yes' AND $hideauthor != 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">Af '.$author.'</div>';  
+     $catloophtml .= '<div class="vanderwebcategory-meta">Af '.$author.'</div>';  
      }elseif($hidedate != 'yes' AND $hideauthor != 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">'.$date.' af '.$author.'</div>';   
+     $catloophtml .= '<div class="vanderwebcategory-meta">'.$date.' af '.$author.'</div>';   
      }
      // Meta info - end
      // ACF - start
      if($acf){
-     $catloophtml .= '<div class="kumentocategory-acf">'.$acfloophtml.'</div>';
+     $catloophtml .= '<div class="vanderwebcategory-acf">'.$acfloophtml.'</div>';
      }
      // ACF - end
      // Short description - start
      if($showdesc == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-text">'.$desc.'</div>';
+     $catloophtml .= '<div class="vanderwebcategory-text">'.$desc.'</div>';
      }
      // Short description - end
      // Readmore - start
      if($showreadmore == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-readmore"><a class="kumentocategory-readmore-link '.$readmoreclass.'" href="'.$link.'">'.$readmore.'</a></div>'; 
+     $catloophtml .= '<div class="vanderwebcategory-readmore"><a class="vanderwebcategory-readmore-link '.$readmoreclass.'" href="'.$link.'">'.$readmore.'</a></div>'; 
      }
      // Readmore - end
      $catloophtml .= '</div></div>';
@@ -386,55 +392,55 @@ function customcatloop_func( $atts ){
    endif;
       
    if ($layout == 2):
-     $catloophtml .= '<li class="kumentocategory-li">';
-     $catloophtml .= '<a class="kumentocategory-simple-link" href="'.$link.'">'.$title.'</a>';   
+     $catloophtml .= '<li class="vanderwebcategory-li">';
+     $catloophtml .= '<a class="vanderwebcategory-simple-link" href="'.$link.'">'.$title.'</a>';   
      $catloophtml .= '</li>';
    endif;
       
    if ($layout == 3):
-     $catloophtml .= '<div class="kumentocategory-col col-12 col-md-'.$colsmall.' col-lg-'.$col.'">';
+     $catloophtml .= '<div class="vanderwebcategory-col col-12 col-md-'.$colsmall.' col-lg-'.$col.'">';
      if($showboxlink == 'yes'){
-     $catloophtml .= '<a class="kumentocategory-box-link" href="'.$link.'">';
+     $catloophtml .= '<a class="vanderwebcategory-box-link" href="'.$link.'">';
      }else{
-     $catloophtml .= '<div class="kumentocategory-box">'; 
+     $catloophtml .= '<div class="vanderwebcategory-box">'; 
      }
      if($showimage == 'yes' AND $post_image_full_src){
      if($hideimagefull != 'yes' and $showboxlink != 'yes'){
      $catloophtml .= $imagelink;
      }
-     $catloophtml .= "<div class='kumentocategory-image' style='background-image: url(&#039;".$post_image_full_src[0]."&#039;); background-size: ".$imagesize.";'>";
+     $catloophtml .= "<div class='vanderwebcategory-image' style='background-image: url(&#039;".$post_image_full_src[0]."&#039;); background-size: ".$imagesize.";'>";
      $catloophtml .= '<img src="'.get_template_directory_uri().'/images/blank-'.$imageheight.'.png" alt="'.$title.'" />';
      $catloophtml .= '</div>';
      if($hideimagefull != 'yes' and $showboxlink != 'yes'){
      $catloophtml .= '</a>';
      }
      }
-     $catloophtml .= '<div class="kumentocategory-content">';    
-     $catloophtml .= '<h3 class="kumentocategory-title">'.$title.'</h3>';
+     $catloophtml .= '<div class="vanderwebcategory-content">';    
+     $catloophtml .= '<h3 class="vanderwebcategory-title">'.$title.'</h3>';
      // Meta info - start
      if($hidedate != 'yes' AND $hideauthor == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">'.$date.'</div>'; 
+     $catloophtml .= '<div class="vanderwebcategory-meta">'.$date.'</div>'; 
      }elseif($hidedate == 'yes' AND $hideauthor != 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">Af '.$author.'</div>';  
+     $catloophtml .= '<div class="vanderwebcategory-meta">Af '.$author.'</div>';  
      }elseif($hidedate != 'yes' AND $hideauthor != 'yes'){
-     $catloophtml .= '<div class="kumentocategory-meta">'.$date.' af '.$author.'</div>';   
+     $catloophtml .= '<div class="vanderwebcategory-meta">'.$date.' af '.$author.'</div>';   
      }
      // Meta info - end
      // ACF - start
      if($acf){
-     $catloophtml .= '<div class="kumentocategory-acf">'.$acfloophtml.'</div>';
+     $catloophtml .= '<div class="vanderwebcategory-acf">'.$acfloophtml.'</div>';
      }
      // ACF - end
      // Short description - start
      if($showdesc == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-text">'.$desc.'</div>';
+     $catloophtml .= '<div class="vanderwebcategory-text">'.$desc.'</div>';
      }
      // Short description - end
      // Readmore - start
      if($showreadmore == 'yes' AND $showboxlink != 'yes'){
-     $catloophtml .= '<div class="kumentocategory-readmore"><a class="kumentocategory-readmore-link '.$readmoreclass.'" href="'.$link.'">'.$readmore.'</a></div>'; 
+     $catloophtml .= '<div class="vanderwebcategory-readmore"><a class="vanderwebcategory-readmore-link '.$readmoreclass.'" href="'.$link.'">'.$readmore.'</a></div>'; 
      }elseif($showreadmore == 'yes' AND $showboxlink == 'yes'){
-     $catloophtml .= '<div class="kumentocategory-readmore"><span class="kumentocategory-readmore-nolink '.$readmoreclass.'">'.$readmore.'</span></div>'; 
+     $catloophtml .= '<div class="vanderwebcategory-readmore"><span class="vanderwebcategory-readmore-nolink '.$readmoreclass.'">'.$readmore.'</span></div>'; 
      }
      // Readmore - end
      $catloophtml .= '</div>';
@@ -445,6 +451,10 @@ function customcatloop_func( $atts ){
      }
      $catloophtml .= '</div>';
    endif;
+			
+			if ($layout == 4):
+     $catloophtml .= '<option value="'.$link.'">'.$title.'</option>';
+   endif;
   }
   $catloophtml .= '<div style="clear: left;"></div>';
   switch ($layout) {
@@ -454,11 +464,16 @@ function customcatloop_func( $atts ){
    case 3:
     $catloophtml .= '</div>';
     break;
+			case 4:
+    $catloophtml .= '</select>';
+				$catloophtml .= '</form>';
+				$catloophtml .= '</div></div>';
+    break;
   }
   if ($category_loop->max_num_pages > 1 AND $showpagination == 'yes') :
    $orig_query = $wp_query; // fix for pagination to work
    $wp_query = $category_loop;
-   $catloophtml .= '<div class="kumento-pagination">';		
+   $catloophtml .= '<div class="vanderweb-pagination">';		
    $catloophtml .= '<span class="nav-next alignright">'.get_previous_posts_link( '< Forrige side' ).'</span>';
    $catloophtml .= ' - <span class="nav-previous alignleft">'.get_next_posts_link( 'Næste side >', $category_loop->max_num_pages ).'</span>';
    $catloophtml .= '</div>';
