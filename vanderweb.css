@@ -366,6 +366,9 @@ embed {
  padding-top: 30px;
  padding-bottom: 30px;
 }
+.vanderweb-content-inner #page-column2 > p:first-of-type {
+	display: none;
+}
 
 /* GALLERY SHORTCODE */
 .vanderweb-gallery-widget {

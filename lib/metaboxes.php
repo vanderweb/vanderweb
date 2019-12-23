@@ -25,6 +25,14 @@ function vanderwebmetacontentcheckbox(){
 	<input type="checkbox" name="vanderweb_toggle_title" value="yes" <?php echo $toggletitle_id_checked; ?> />
 	<label><?php echo __('Hide Title Header','vanderweb'); ?></label>
 	<br /><br />
+	<?php
+	// Split Content Checkbox
+	$splitcontent_id = $custom["splitcontent"][0];
+	$splitcontent_id_value = get_post_meta($post->ID, 'splitcontent', true);
+	if($splitcontent_id_value == "yes") $splitcontent_id_checked = 'checked="checked"'; ?>
+	<input type="checkbox" name="splitcontent" value="yes" <?php echo $splitcontent_id_checked; ?> />
+	<label><?php echo __('Split content in 2 columns, by insetting "Readmore" tag','vanderweb'); ?></label>
+    <br /><br />
 	<?php  
 	// Hide Content Section Checkbox
 	$hidecontentsection_id = $custom["hidecontentsection"][0];
@@ -44,6 +52,7 @@ function save_vanderwebcontentoptions(){
 	}
 	update_post_meta($post->ID, "vanderweb_toggle_title", $_POST["vanderweb_toggle_title"]);
 	update_post_meta($post->ID, "pagecustomclass", $_POST["pagecustomclass"]);
+	update_post_meta($post->ID, "splitcontent", $_POST["splitcontent"]);
 	update_post_meta($post->ID, "hidecontentsection", $_POST["hidecontentsection"]);
 }
 
@@ -53,6 +62,7 @@ function delete_vanderwebcontentoptions(){
 	global $post;
 	delete_post_meta($post->ID, "vanderweb_toggle_title");
 	delete_post_meta($post->ID, "pagecustomclass");
+	delete_post_meta($post->ID, "splitcontent");
 	delete_post_meta($post->ID, "hidecontentsection");
 	return $post->ID;
 }
