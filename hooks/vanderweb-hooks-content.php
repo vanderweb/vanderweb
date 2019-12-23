@@ -79,13 +79,16 @@ function vanderweb_loop_page() {
                     <div class="vanderweb-content-col col">
                     <?php
                     do_action ( 'vanderweb_col_top' );
-                    if (is_singular('page') ) {
+					
+                    if (is_singular('page') AND get_post_meta($post->ID, 'splitcontent', true )) {
 						// split content into array
-						$content = split_content();			
-						// output first content section in column1
-						echo '<div id="page-column1" class="page-column">', array_shift($content), '</div>';			
-						// output remaining content sections in column2
-						echo '<div id="page-column2" class="page-column">', implode($content), '</div>';
+						$content = split_content();
+						echo '<div class="vanderweb-content-inner row">';
+							// output first content section in column1
+							echo '<div id="page-column1" class="page-column col-12 col-md-6">', array_shift($content), '</div>';			
+							// output remaining content sections in column2
+							echo '<div id="page-column2" class="page-column col-12 col-md-6">', implode($content), '</div>';
+						echo '</div>';
 					} else {
 						the_content();
 					}

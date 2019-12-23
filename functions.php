@@ -86,7 +86,16 @@ function vanderweb_widgets_init() {
    'after_title' => '</span>',
   )
  );
- 
+ register_sidebar(
+  array(
+   'name' => __( 'Hero Section', 'vanderweb' ),
+   'id' => 'herosection',
+   'before_widget' => '<div id="%1$s" class="col-12 col-md hero-section widget %2$s"><div class="widget-inner">',
+   'after_widget' => '</div></div>',
+   'before_title' => '<div class="widget-title"><h3>',
+   'after_title' => '</h3></div>',
+  )
+ );
  register_sidebar(
   array(
    'name' => __( 'Slider', 'vanderweb' ),
@@ -345,18 +354,7 @@ function parent_theme_features() {
   'flex-height'   => true,
   'height'        => 200,
  );
- $defaults = array(
-  'default-color'          => '',
-  'default-image'          => '',
-  'default-repeat'         => '',
-  'default-position-x'     => '',
-  'default-attachment'     => '',
-  'wp-head-callback'       => 'vanderweb_custom_background_cb',
-  'admin-head-callback'    => '',
-  'admin-preview-callback' => ''
-);
  add_theme_support( 'custom-header', $args );
- add_theme_support( 'custom-background', $defaults );
  add_theme_support( 'post-thumbnails' );
  add_theme_support( 'automatic-feed-links' );
  add_theme_support( 'title-tag' );

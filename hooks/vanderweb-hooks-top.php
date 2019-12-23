@@ -1,6 +1,6 @@
 <?php
 ////////////////////////////////////////////////////////////////////
-// Hooks in Header
+// Hooks in Head
 ////////////////////////////////////////////////////////////////////
 function vanderweb_favicon() {
 ?>
@@ -11,7 +11,7 @@ function vanderweb_favicon() {
 add_action( 'vanderweb_meta_header' , 'vanderweb_favicon', 5 );
 
 ////////////////////////////////////////////////////////////////////
-// Hooks above Content
+// Hooks in Header
 ////////////////////////////////////////////////////////////////////
 function vanderweb_topbar() {
     if(is_active_sidebar( 'topbarwidget' )):
@@ -33,7 +33,7 @@ add_action( 'vanderweb_header' , 'vanderweb_topbar', 5 );
 function vanderweb_toplogo() {
     if(get_option('vanderweb_headertoogle') == 'logotop'):
     ?>
-    <div id="vanderweb-toplogo" class="d-none d-md-block">
+    <header id="vanderweb-toplogo" class="d-none d-md-block">
         <?php do_action ( 'vanderweb_toplogo_top' ); ?>
         <div class="toplogo-container container">
             <div class="toplogo-row row">
@@ -52,7 +52,7 @@ function vanderweb_toplogo() {
             </div>
         </div>
         <?php do_action ( 'vanderweb_toplogo_bottom' ); ?>
-    </div>
+    </header>
     <?php
     endif;
 }
@@ -148,6 +148,23 @@ function vanderweb_phonemenu() {
     <?php
 }
 add_action( 'vanderweb_header' , 'vanderweb_phonemenu', 20 );
+
+////////////////////////////////////////////////////////////////////
+// Hooks above Content
+////////////////////////////////////////////////////////////////////
+function vanderweb_hero_section() {
+	if (is_active_sidebar( 'herosection' )) {
+    ?>
+	<section id="vanderweb-hero-section">
+		<div class="container hero-section-container">
+			<div class="row hero-section-row section-row">
+				<?php dynamic_sidebar( 'herosection' ); ?>
+			</div>
+		</div>
+	</section>
+	<?php }
+}
+add_action( 'vanderweb_before_contentsection' , 'vanderweb_hero_section', 15 );
 
 function vanderweb_slider() {
 	if (is_active_sidebar( 'slider' ) ) {

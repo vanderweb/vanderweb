@@ -45,9 +45,8 @@ if(is_category() || is_archive()){
 <body class="vanderweb-content-type-<?php echo $vanderweb_content_type; ?>">
 <?php do_action ( 'vanderweb_scripts_bodytop' ); ?>
 <div class="vanderweb-wrapper">
-	<header id="vanderweb-header">
-		<?php do_action ( 'vanderweb_header' ); ?>
-	</header>
+	<?php do_action ( 'vanderweb_header' ); ?>
+	
 	<?php do_action ( 'vanderweb_body_top' ); ?>
 	<?php do_action ( 'vanderweb_before_contentsection' ); ?>
 	<?php do_action ( 'vanderweb_before_contentsection_custom' ); ?>
