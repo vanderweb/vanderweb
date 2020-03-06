@@ -225,3 +225,86 @@ function vanderwebslider_func( $atts ){
  return $sliderhtml;
 }
 add_shortcode( 'vanderwebslider', 'vanderwebslider_func' );
+
+// [vanderwebgallery]
+function vanderwebgallery_func( $atts ){
+ $a = shortcode_atts( array(
+  'slug' => '',
+  'class' => '',
+  'count' => 50,
+  'order' => 'ASC', // ASC, DESC
+  'orderby' => 'menu_order', // none, ID, author, title, name, type, date, modified, parent, rand, menu_order, 
+  'cols' => 'col-6 col-lg-4',
+  'imagessize' => '480x480', // 320x480, 360x480, 480x320, 480x360, 480x480
+		'imagesfill' => 'auto',
+		'quality' => 'medium', // small, medium, large, full
+		'caption' => 'FALSE',
+		'linkmode' => 'fancybox', // fancybox, url
+	), $atts );
+ $slug = $a['slug'];
+ $class = $a['class'];
+ $count = $a['count'];
+ $order = $a['order'];
+ $orderby = $a['orderby'];
+ $cols = $a['cols'];
+ $imagessize = $a['imagessize'];
+	$imagesfill = $a['imagesfill'];
+	$quality = $a['quality'];
+	$caption = $a['caption'];
+	$linkmode = $a['linkmode'];
+ 
+ $args = array(
+  'tax_query' => array(
+   array(
+    'taxonomy' => 'vanderweb_slides_cats',
+    'field' => 'slug',
+    'terms' => array( $slug )
+   ),
+  ),
+  'post_type' => 'vanderweb_slides',
+  'order' => $order,
+  'orderby' => $orderby,
+  'posts_per_page' => $count
+ );
+	
+ $gallery_loop = new WP_Query($args);
+ $galleryhtml = '';
+ 
+ if ( $gallery_loop->have_posts() ):
+		$galleryhtml .= '<div id="vanderweb-gallery-'.$slug.'" class="vanderweb-gallery '.$class.'">';
+		$galleryhtml .= '<div class="vanderweb-gallery-row row">';
+		
+		while( $gallery_loop->have_posts() ){
+   $gallery_loop->the_post();
+   $title = get_the_title();
+			$desc = get_the_content();
+			$stripped_desc = strip_tags($desc, '<br>');
+			$meta_gallery_link = get_post_meta(get_the_ID(), '_vanderweb_link_meta_key', true);
+			$meta_gallery_linktarget = get_post_meta(get_the_ID(), '_vanderweb_linktarget_meta_key', true);
+   $post_image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false );
+			$thumb_image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), $quality, false );
+			if ($linkmode == 'fancybox'){
+				$imagelinkhtml = "href='".$post_image_src[0]."' class='vanderweb-gallery-link fancybox' title='".$stripped_desc."'";
+			}elseif($linkmode == 'url'){
+				$imagelinkhtml = "href='".$meta_gallery_link."' class='vanderweb-gallery-link url' target='".$meta_gallery_linktarget."' title='".$title."'";
+			}
+   // Item - Start
+			$galleryhtml .= '<div class="vanderweb-gallery-col '.$cols.'">';
+			$galleryhtml .= "<a ".$imagelinkhtml." rel='gallery-".$slug."' alt='".$title."' style='background-image: url(&#039;".$thumb_image_src[0]."&#039;); background-size: ".$imagesfill.";'>";
+			$galleryhtml .= '<img src="'.get_template_directory_uri().'/images/blank-'.$imagessize.'.png" alt="'.$title.'" />';
+			$galleryhtml .= '</a>';
+			if( ($caption != 'FALSE') AND ($desc != '') ){
+				$galleryhtml .= '<div class="vanderweb-gallery-caption">'.$desc.'</div>';
+			}
+			$galleryhtml .= ' </div>';
+   // Item - End
+  }
+		wp_reset_query();
+		wp_reset_postdata();
+		$galleryhtml .= '<div class="clear"></div>';
+		$galleryhtml .= '</div>';
+		$galleryhtml .= '</div>';
+ endif;
+ return $galleryhtml;
+}
+add_shortcode( 'vanderwebgallery', 'vanderwebgallery_func' );
