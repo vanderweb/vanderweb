@@ -118,6 +118,78 @@ function vanderweb_slides_save_postdata($post_id){
 add_action('save_post', 'vanderweb_slides_save_postdata');
 
 ////////////////////////////////////////////////////////////////////
+// Subpage
+////////////////////////////////////////////////////////////////////
+function vanderwebslider_shortcodes_menu() {
+	add_submenu_page(
+		'edit.php?post_type=vanderweb_slides',
+		'Slider and Gallery - Shortcodes',
+		'Shortcodes',
+		'manage_options',
+		'vanderweb-slides-shortcodes',
+		'vanderweb_slides_shortcodes'
+	);
+}
+add_action( 'admin_menu', 'vanderwebslider_shortcodes_menu' );
+
+function vanderweb_slides_shortcodes() {
+	if ( !current_user_can( 'manage_options' ) )  {
+	 wp_die('You do not have sufficient permissions to access this page.');
+	}
+	//get our global options
+	global $developer_uri;
+	$terms = get_terms( array( 
+		'taxonomy' => 'vanderweb_slides_cats',
+	) );
+	$slugs = '';
+	$galleries = '';
+	if( !empty( $terms ) && !is_wp_error( $terms )){
+		foreach( $terms as $term ) {
+			$sliders .= '[vanderwebslider slug="'.$term->slug.'"]<br />';
+			$galleries .= '[vanderwebgallery slug="'.$term->slug.'"]<br />';
+		}
+	}else{
+		$slugs = '[vanderwebslider slug="your-category-slug"]';
+		$galleries = '[vanderwebgallery slug="your-category-slug"]';
+	}
+	
+	// html
+	echo '<h1>Slider and Gallery - Shortcodes</h1>';
+	echo '<hr />';
+	echo '<h3>Slider</h3>';
+	echo '<p>';
+	echo $sliders;
+	echo '</p>';
+	echo '<p><b>Shortcode attributes:</b></p>';
+	echo '<p>class=""</p>';
+	echo '<p>count="50"</p>';
+	echo '<p>order="ASC" <br />( ASC, DESC )</p>';
+	echo '<p>orderby="menu_order" <br />( none, ID, author, title, name, type, date, modified, parent, rand, menu_order )</p>';
+	echo '<p>caption="TRUE"</p>';
+	echo '<p>captionclass="d-none d-md-block" <br />( left-top, left-center, left-bottom, right-top, right-center, right-bottom, center-top, center-bottom )</p>';
+	echo '<p>speed="5000"</p>';
+	echo '<p>transition="carousel-fade"</p>';
+	echo '<p>bullets="TRUE"</p>';
+	echo '<p>arrows="TRUE"</p>';
+	echo '<hr />';
+	echo '<h3>Gallery</h3>';
+	echo '<p>';
+	echo $galleries;
+	echo '</p>';
+	echo '<p><b>Shortcode attributes:</b></p>';
+	echo '<p>class=""</p>';
+	echo '<p>count="50"</p>';
+	echo '<p>order="ASC" <br />( ASC, DESC )</p>';
+	echo '<p>orderby="menu_order" <br />( none, ID, author, title, name, type, date, modified, parent, rand, menu_order )</p>';
+	echo '<p>caption="FALSE"</p>';
+	echo '<p>cols="col-6 col-lg-4"</p>';
+	echo '<p>imagessize="480x480" <br />( 320x480, 360x480, 480x320, 480x360, 480x480 )</p>';
+	echo '<p>imagesfill="auto"</p>';
+	echo '<p>quality="medium" <br />( small, medium, large, full )</p>';
+	echo '<p>linkmode="fancybox" <br />( fancybox, url )</p>';
+}
+
+////////////////////////////////////////////////////////////////////
 // Shortcodes
 ////////////////////////////////////////////////////////////////////
 
