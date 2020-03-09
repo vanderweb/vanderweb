@@ -60,7 +60,7 @@ add_action( 'vanderweb_header' , 'vanderweb_toplogo', 10 );
 
 function vanderweb_mainmenu() {
     ?>
-    <nav class="vanderweb-header-nav navbar sticky-top navbar-expand-md d-none d-md-block">
+    <nav class="vanderweb-header-nav navbar sticky-top navbar-expand-md">
         <?php do_action ( 'vanderweb_header_top' ); ?>
         <div class="vanderweb-header-container container">
             <div class="vanderweb-header-row row">
@@ -76,7 +76,13 @@ function vanderweb_mainmenu() {
                 <?php
                 endif;
                 ?>
-                <div class="vanderweb-header-menu col align-self-center">
+                <div class="vanderweb-header-phone col d-block d-md-none align-self-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only"><?php _e('Toggle navigation','vanderweb'); ?></span>
+                    </button>
+                </div>
+                <div class="vanderweb-header-menu col-12 col-md align-self-center">
+                    
                 <?php
                 do_action ( 'vanderweb_header_menu_before' );
 
@@ -107,47 +113,6 @@ function vanderweb_mainmenu() {
     <?php
 }
 add_action( 'vanderweb_header' , 'vanderweb_mainmenu', 15 );
-
-function vanderweb_phonemenu() {
-    ?>
-    <nav class="vanderweb-phone-nav navbar sticky-top navbar-expand-md d-block d-md-none">
-        <?php do_action ( 'vanderweb_phone_top' ); ?>
-        <div class="vanderweb-phone-container container-fluid">
-            <div class="vanderweb-phone-row row">
-                <div class="vanderweb-phone-logo col-auto">
-                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img class="vanderweb-phone-logo-img" src="<?php echo $acf_header_logo_img; ?>" alt="logo">
-                    </a>
-                </div>
-                <div class="vanderweb-phone-menu col-auto align-self-center ml-auto">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdownPhone" aria-controls="navbarNavDropdownPhone" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="sr-only"><?php _e('Toggle navigation','vanderweb'); ?></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-            </div>
-            <?php
-
-            wp_nav_menu( array(
-                'theme_location'    => 'main_menu',
-                'depth'             => 3,
-                'container'         => 'div',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'navbarNavDropdownPhone',
-                'menu_class'      => 'navbar-nav mt-2 mt-sm-0 mr-auto',
-                'fallback_cb'     => 'wp_page_menu',
-                'walker'          => new WP_Bootstrap_Navwalker()
-                )
-            );
-            ?>
-        </div>
-        <?php do_action ( 'vanderweb_phone_bottom' ); ?>
-    </nav>
-    <?php
-}
-add_action( 'vanderweb_header' , 'vanderweb_phonemenu', 20 );
 
 ////////////////////////////////////////////////////////////////////
 // Hooks above Content
