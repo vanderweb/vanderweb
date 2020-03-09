@@ -7,7 +7,7 @@
 $themename = "Vander Web";
 $developer_uri = "https://vander-web.com";
 $shortname = "vanderweb";
-$version = '1.0.3';
+$version = '1.0.4';
 load_theme_textdomain( 'vanderweb', get_template_directory() . '/languages' );
 
 ////////////////////////////////////////////////////////////////////
