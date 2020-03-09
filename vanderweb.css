@@ -265,92 +265,67 @@ embed {
 .vanderweb-header-nav .container-fluid .vanderweb-header-row {
  margin: 0;
 }
-.vanderweb-phone-nav,
-.vanderweb-phone-container {
- padding: 0;
-}
-.vanderweb-phone-container {
- padding: 0;
-}
-.vanderweb-phone-container #navbarNavDropdownPhone {
- padding-left: 15px;
- padding-right: 15px;
-}
-.vanderweb-phone-row,
 .vanderweb-header-row {
  width: 100%;
 }
 .vanderweb-header-logo.order-last {
  padding-right: 0;
 }
-.vanderweb-phone-logo .navbar-brand {
- margin: 0;
- padding: 0 15px;
- display: block;
-}
-.vanderweb-phone-menu .navbar-toggler {
- border: 0;
-}
 .vanderweb-header-logo .navbar-brand {
  margin: 0;
  padding: 0;
  display: block;
 }
-.vanderweb-phone-logo-img,
 .vanderweb-header-logo-img {
  height: auto;
  width: auto;
+}
+.vanderweb-header-menu .navbar-collapse {
+ width: 100%;
+ clear: both;
+ float: none;
 }
 .vanderweb-header-menu .navbar-nav {
  padding-top: 10px;
  padding-bottom: 10px;
 }
-.vanderweb-phone-container .navbar-nav li a,
 .vanderweb-header-menu .navbar-nav li a {
  text-decoration: none;
 }
 .vanderweb-header-menu .navbar-nav > li:first-child > a {
  border-left: 0;
 }
-.vanderweb-phone-container .navbar-nav .dropdown-menu {
- padding: 0;
- border: 0;
- background-color: transparent;
- background-image: none;
-}
 .vanderweb-header-menu .navbar-nav .dropdown-menu.show a.dropdown-item {
  padding-top: 2px;
  padding-bottom: 2px;
 }
-.vanderweb-phone-container .navbar-nav li a:hover,
-.vanderweb-phone-container .navbar-nav li.active a,
-.vanderweb-phone-container .navbar-nav li a.active,
-.vanderweb-phone-container .navbar-nav li.active a:hover,
 .vanderweb-header-menu .navbar-nav li a:hover,
 .vanderweb-header-menu .navbar-nav li.active a,
 .vanderweb-header-menu .navbar-nav li a.active,
 .vanderweb-header-menu .navbar-nav li.active a:hover {
  background-color: transparent;
 }
-.vanderweb-phone-nav {
- display: none;
-}
-.vanderweb-phone-logo.ml-auto,
-.vanderweb-phone-menu.ml-auto {
+
+.vanderweb-header-phone {
  padding-right: 0;
- margin-right: -15px;
 }
-.vanderweb-phone-menu .navbar-toggler {
- padding: 0 15px 0 0;
+.vanderweb-header-phone .navbar-toggler {
+ padding: 0;
  border: 0;
  background-color: transparent;
  background-image: none;
-}
-.vanderweb-phone-menu .navbar-toggler .icon-bar {
+ float: right;
+ width: 30px;
+ height: 30px;
  display: block;
- border-radius: 1px;
 }
-.vanderweb-phone-menu .navbar-toggler .sr-only {
+.vanderweb-header-phone .navbar-toggler:before {
+ font-family: FontAwesome;
+ font-size: 30px;
+ content: '\f0c9';
+ color: #333;
+}
+.vanderweb-header-phone .navbar-toggler .sr-only {
  position: absolute;
  width: 1px;
  height: 1px;
